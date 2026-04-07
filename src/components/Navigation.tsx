@@ -22,7 +22,7 @@ export default function Navigation() {
             href="/"
             className="text-xl font-bold text-zinc-900 dark:text-zinc-100 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
           >
-            Consultant
+            Meridia
           </Link>
 
           <div className="hidden md:flex items-center gap-1">

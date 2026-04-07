@@ -40,9 +40,12 @@ export default function AboutPage() {
 
           <div className="space-y-4 mb-8">
             <div className="bg-white dark:bg-zinc-900 rounded-lg p-5 shadow-sm border border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
-                Internal Knowledge &amp; RAG Systems
-              </h3>
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">🔍</span>
+                <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                  Internal Knowledge &amp; RAG Systems
+                </h3>
+              </div>
               <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                 AI assistants connected to your proprietary data — SOPs, product
                 catalogs, support histories — so employees get accurate, sourced
@@ -51,9 +54,12 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white dark:bg-zinc-900 rounded-lg p-5 shadow-sm border border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
-                Agentic AI &amp; Workflow Automation
-              </h3>
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">⚡</span>
+                <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                  Agentic AI &amp; Workflow Automation
+                </h3>
+              </div>
               <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                 Intelligent systems that automate high-friction workflows end to
                 end — order processing, inventory reconciliation, customer triage.
@@ -62,9 +68,12 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white dark:bg-zinc-900 rounded-lg p-5 shadow-sm border border-zinc-200 dark:border-zinc-800">
-              <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
-                AI Governance &amp; Tool Vetting
-              </h3>
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">🛡️</span>
+                <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
+                  AI Governance &amp; Tool Vetting
+                </h3>
+              </div>
               <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
                 Employees are already using AI tools — the question is whether
                 your organization has a policy for it. I help you draft an AI
@@ -81,13 +90,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               "Retrieval-Augmented Generation (RAG)",
-              "Vector Databases & Hybrid Search",
-              "ETL Pipeline Development",
+              "Vector Databases & Semantic Search",
+              "Extract-Transform-Load (ETL) Pipelines",
               "Natural Language Processing (NLP)",
-              "Prompt Engineering & Optimization",
-              "Named Entity Recognition (NER)",
-              "BM25 Search Implementation",
-              "Enterprise Workflow Automation",
+              "Prompt Engineering",
+              "Single & Multi-Agent Systems",
+              "Enterprise AI Governance Policies",
+              "AI Tool Vetting Frameworks"
             ].map((skill) => (
               <div
                 key={skill}

@@ -251,15 +251,31 @@ export default function ServicesPage() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
             Services
           </h1>
-          <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto mb-6">
             Two distinct advisory tracks — one for companies building their own
             AI tools, and one for organizations that need to govern how their
             teams use third-party AI.
           </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="#build-advisory"
+              className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg transition-colors"
+            >
+              AI Build Advisory
+              <span>→</span>
+            </a>
+            <a
+              href="#ai-governance"
+              className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-zinc-900 font-medium px-6 py-3 rounded-lg transition-colors"
+            >
+              AI Governance &amp; Tool Vetting
+              <span>→</span>
+            </a>
+          </div>
         </div>
 
         {/* Track 1: AI Build Advisory */}
-        <div className="mb-20">
+        <div id="build-advisory" className="mb-20 scroll-mt-24">
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
               AI Build Advisory
@@ -284,7 +300,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Track 2: AI Governance & Tool Vetting */}
-        <div>
+        <div id="ai-governance" className="scroll-mt-24">
           <div className="mb-12">
             <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">
               AI Governance & Tool Vetting
